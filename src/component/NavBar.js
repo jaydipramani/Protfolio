@@ -4,6 +4,7 @@ import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, TwitterIcon } from "./Icons";
 import { motion } from "framer-motion";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
 const CustomLink = ({href, title,className=""}) => {
     const router = useRouter();
@@ -19,6 +20,8 @@ const CustomLink = ({href, title,className=""}) => {
 
 
 const NavBar = () =>{
+
+    const [mode, setMode] = useThemeSwitcher()
     return(
         <header
         className="w-full px-32 py-8 font-medium flex items-centers justify-between">
@@ -62,6 +65,10 @@ const NavBar = () =>{
                  className="w-6 ml-3">
                     <DribbbleIcon/>
                 </motion.a>
+
+                <button>
+
+                </button>
             </nav>
 
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
