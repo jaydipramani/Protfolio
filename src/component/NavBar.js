@@ -21,7 +21,7 @@ const CustomLink = ({href, title,className=""}) => {
 
 const NavBar = () =>{
 
-    const [mode, setMode] = useThemeSwitcher()
+    // const [mode, setMode] = useThemeSwitcher()
     return(
         <header
         className="w-full px-32 py-8 font-medium flex items-centers justify-between">
