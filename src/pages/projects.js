@@ -70,7 +70,7 @@ const projects = () => {
     return (
         <>
             <Head>
-                <title>Jd's Thoughts | Projects Page</title>
+                <title>Jd&apos;s Thoughts | Projects Page</title>
                 <meta name="description" content="" />
             </Head>
 

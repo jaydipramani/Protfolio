@@ -85,7 +85,7 @@ const articles = () => {
     return (
         <>
             <Head>
-                <title>Jd's Thoughts | Articles Page</title>
+                <title>Jd&apos;s Thoughts | Articles Page</title>
                 <meta name="description" content="" />
             </Head>
             <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
