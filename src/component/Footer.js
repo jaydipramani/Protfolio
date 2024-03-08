@@ -9,9 +9,9 @@ const Footer = () => {
                 <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
                 <div>
                 Build with <span className="text-primary text-2xl px-1">&#9825;</span>
-                by&nbsp;<Link href={"https://www.google.com/"} className="underline underline-offset-2">CodeBucks</Link>
+                by&nbsp;<Link href={"https://github.com/jaydipramani"} target={'_blank'} className="underline underline-offset-2">Jd&apos;s Thoughts</Link>
                 </div>
-                <Link href={"/"}>Say Hello</Link>
+                <Link href={"https://www.linkedin.com/in/jaydip-ramani/"} target={'_blank'}>Say Hello</Link>
             </Layout>
 
         </footer>
