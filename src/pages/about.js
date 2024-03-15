@@ -4,7 +4,7 @@ import Head from "next/head";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg"
+import profilePic from "../../public/images/profile/dev_pro.jpg"
 import Skills from "@/component/Skills";
 import Exprience from "@/component/Exprience";
 import Education from "@/component/Education";
@@ -14,7 +14,7 @@ const AnimatedNumbers = ({ value }) => {
 
     const motionValue = useMotionValue(0);
     const springValue = useSpring(motionValue, { duration: 3000 })
-    const isInView = useInView(ref, {once: true});
+    const isInView = useInView(ref, { once: true });
 
     useEffect(() => {
         if (isInView) {
@@ -54,7 +54,7 @@ const about = () => {
                                 new and innovative ways to bring my clients visions to life.
                             </p>
                             <p className="my-4 font-medium">
-                                I believe that design is about more than just making things look pretty – it&apos;s about solving problems and
+                                I believe that design is about more than just making things look pretty it&apos;s about solving problems and
                                 creating intuitive, enjoyable experiences for users.
                             </p>
 
@@ -66,10 +66,10 @@ const about = () => {
 
                         </div>
 
-                        <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
+                        <div className="col-span-3 relative h-max rounded-full border-2 border-solid border-dark
                         bg-light p-8">
-                            <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
-                            <Image src={profilePic} alt="Jd's Thoughts" className="w-full h-auto rounded-2xl" />
+                            <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-full bg-dark" />
+                            <Image src={profilePic} alt="Jd's Thoughts" className="w-full h-auto rounded-full" />
                         </div>
                         <div className="col-span-2 flex flex-col items-end justify-between">
                             <div className="flex flex-col items-end justify-center">
@@ -82,7 +82,7 @@ const about = () => {
                             </div>
                             <div className="flex flex-col items-end justify-center">
                                 <span className="inline-block text-7xl font-bold">
-                                    <AnimatedNumbers value={8} />+
+                                    <AnimatedNumbers value={18} />+
                                 </span>
                                 <h2 className="text-xl font-medium capitalize text-dark/75">
                                     completed projects
@@ -100,9 +100,9 @@ const about = () => {
 
                     </div>
 
-                    <Skills/>
-                    <Exprience/>
-                    <Education/>
+                    <Skills />
+                    <Exprience />
+                    <Education />
                 </Layout>
             </main>
         </>
